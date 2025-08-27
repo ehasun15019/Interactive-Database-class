@@ -1,2 +1,4 @@
 1. What is the full form of CRUD?
   Ans: Create Read Update and Delete. 
+
+2. unix epoch = january 1, 1970 00:00:00
