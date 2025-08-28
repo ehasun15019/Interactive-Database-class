@@ -6,4 +6,12 @@
 
      note: এখানে artist_name দেলায় হবে। artist_id auto increment hoe jabe. 2 vabei kora jai. But alway follow the ex.1
 
-২.
+২. suppose ami Products নামে একটা টেবিল তৈরি করলাম সেখানে যদি
+
+    INSERT INTO Products VALUES (NULL, 22, "Monitor")
+
+এই SQL Code Run kori tahole
+field gola olta palta hoe bosbe.. কিন্ত আমারা যদি field এর name dai tahole abar tik hoe jabe
+
+    Ex:
+    INSERT INTO Products (price, name)  VALUES (23, "TV")
