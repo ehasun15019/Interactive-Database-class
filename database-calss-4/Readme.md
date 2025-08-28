@@ -15,3 +15,8 @@ field gola olta palta hoe bosbe.. কিন্ত আমারা যদি fiel
 
     Ex:
     INSERT INTO Products (price, name)  VALUES (23, "TV")
+
+৩. যদি multiple data entry korte cai tahole
+
+    Ex:
+     INSERT INTO Products (price, name) VALUES(26, "Laptop"), (30, "MicroPhone"), (35, "SSD")
