@@ -20,3 +20,19 @@ field gola olta palta hoe bosbe.. কিন্ত আমারা যদি fiel
 
     Ex:
      INSERT INTO Products (price, name) VALUES(26, "Laptop"), (30, "MicroPhone"), (35, "SSD")
+
+৪. suppose ami ai SQL code like Songs Table akta song Import korsi seta akon update korte cassi
+
+    Insert SQL code:
+    INSERT INTO Songs (song_name, artist_id, genre_id, release_year) VALUES ("This is a song", 1, 1, 2025);
+
+    এখন আমি jodi song_name টা change করতে চাই তাহলে আমার কি করতে হবেঃ
+
+    Ex:
+     first-of-all আমারা jai song_name ta change korte cassi সেটা আমাদের ধরতে হবে
+
+       SELECT song_id, song_name FROM Songs Where song_name = "This is a song"
+
+    Secondly amra jokon update korbo tokon ai code dite hobe
+
+       UPDATE Songs SET song_name = 'Stay Way to haven' Where song_id = 31
