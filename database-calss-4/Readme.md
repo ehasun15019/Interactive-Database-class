@@ -36,3 +36,33 @@ field gola olta palta hoe bosbe.. কিন্ত আমারা যদি fiel
     Secondly amra jokon update korbo tokon ai code dite hobe
 
        UPDATE Songs SET song_name = 'Stay Way to haven' Where song_id = 31
+
+5. একই শিরনাম ২ জন Artists ar song a hote pare akon এখন যেকোনো আকজনের শিরনাম change korte cassi
+
+   INSERT INTO Songs (song_name, artist_id, genre_id, release_year) VALUES ("dummy song", 1, 1, 2026);
+   INSERT INTO Songs (song_name, artist_id, genre_id, release_year) VALUES ("dummy song", 2, 3, 2026);
+
+   Ex:
+   এখন akane যদি song_name change korte cai যার artist_id হল 2 তাহলে আমাদের এটা দিতে হবে
+
+   UPDATE Songs SET song_name = 'Future Days' Where song_name = "This is a dummy song" AND artist_id = 2;
+
+
+৬. suppose amar Product table a "LaptopX" নামে কয়েকটা product ase akon segolar name change kore "MackBook" Korte cassi
+
+    INSERT INTO Products (price, name) VALUES (23, "LaptopX"), (24, "LaptopY"), (25, "LaptopX");
+
+    Ex: 
+     UPDATE Products SET name = "MacBook" Where name LIKE "LaptopX"
+
+
+৭. suppose amar Product table এর প্রতিটি price ar 10 tk increase hobe তাহলে:
+  
+    Ex: 
+     UPDATE Products SET price = price + 20
+
+
+৮. suppose amar Product table এর যেই price গুলা ২০ tk এর soman বা  tar opore tahole sai price এর সাথে ১০০ tk যোগ hobe: 
+
+    Ex: 
+     UPDATE Products SET price = price + 100 WHERE Price >= 20
