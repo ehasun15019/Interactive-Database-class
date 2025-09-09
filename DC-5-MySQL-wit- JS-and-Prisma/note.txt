@@ -1,0 +1,11 @@
+********** Folder structure start   **********
+
+1. Fist of all "npm init -y" for download package.json
+
+2. then package.json এর type common.js না দিয়ে module করব for import/export এর জন্য
+
+3. for installing prisma. "npm install @prisma/client".
+
+4. prisma কে mysql ar সাথে initialize করার জন্য "npx prisma init -datasource-provider mysql"
+
+********** Folder structure End   **********
