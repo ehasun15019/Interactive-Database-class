@@ -66,3 +66,28 @@ field gola olta palta hoe bosbe.. কিন্ত আমারা যদি fiel
 
     Ex: 
      UPDATE Products SET price = price + 100 WHERE Price >= 20
+
+
+৯. suppose amader data te jeno kono vol data cole na ase sai jonno amara ja use korbo 
+
+    Ex: 
+    START TRANSACTION 
+        #quary1
+        #quary2
+        #quary3
+    COMMIT;
+
+    note: start TRANSACTION দিয়া শুরু করব COMMIT দিয়া শেষ করব ।
+
+
+১০. 
+    এখানে Songs টেবিলের artist_id কে Artists টেবিলের artist_id এর সাথে মেলাচ্ছে।
+    এখানে Songs টেবিলের genre_id কে Genres টেবিলের genre_id এর সাথে মেলাচ্ছে।
+
+    Example: 
+        SELECT Songs.song_name, Artists.artist_name, Genres.genre_name
+        FROM Songs
+        JOIN Artists ON Artists.artist_id = Songs.artist_id
+        JOIN Genres ON Genres.genre_id = Songs.genre_id;
+
+
